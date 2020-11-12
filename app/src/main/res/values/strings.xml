@@ -12,4 +12,8 @@
     <string name="title_activity_list">ListActivity</string>
     <string name="_12_elementos">12 elementos</string>
     <string name="todo">TODO</string>
+    <string name="feedbacktype1">Sexo</string>
+    <string name="feedbacktype2">Masculino</string>
+    <string name="feedbacktype3">Femenino</string>
+
 </resources>
