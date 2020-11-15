@@ -15,5 +15,6 @@
     <string name="feedbacktype1">Sexo</string>
     <string name="feedbacktype2">Masculino</string>
     <string name="feedbacktype3">Femenino</string>
+    <string name="title_activity_lista">Lista</string>
 
 </resources>

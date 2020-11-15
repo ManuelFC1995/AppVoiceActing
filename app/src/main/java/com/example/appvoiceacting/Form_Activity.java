@@ -21,7 +21,7 @@ public class Form_Activity extends AppCompatActivity {
         Guardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-Intent intent = new Intent(Form_Activity.this,ListActivity.class);
+Intent intent = new Intent(Form_Activity.this,Lista.class);
 startActivity(intent);
             }
 
@@ -32,7 +32,7 @@ atras=(Button) findViewById(R.id.floatingActionButtonBackForm);
 atras.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(Form_Activity.this,ListActivity.class);
+        Intent intent = new Intent(Form_Activity.this,Lista.class);
         startActivity(intent);
     }
 });

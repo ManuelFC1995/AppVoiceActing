@@ -11,14 +11,12 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
 
-import android.widget.Button;
-
-public class ListActivity extends AppCompatActivity {
+public class Lista extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list);
+        setContentView(R.layout.activity_lista);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -26,8 +24,8 @@ public class ListActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               Intent intent= new Intent(ListActivity.this,Form_Activity.class);
-               startActivity(intent);
+                Intent intent= new Intent(Lista.this,Form_Activity.class);
+                startActivity(intent);
             }
         });
     }
