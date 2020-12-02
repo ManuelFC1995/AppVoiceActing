@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A4B1F8"
+    android:scrollbars="vertical"
+    android:textAlignment="center"
+    tools:menu="@menu/menu_list">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/TextViewTitle"
+            style="@style/MyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="100dp"
+            android:text="@string/formulario_de_registro"
+            android:textAlignment="center"
+            android:textColor="#4451A8"
+            android:textSize="10pt"></TextView>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="143dp"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@android:drawable/ic_menu_crop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/imputname"
+                android:layout_width="245dp"
+                android:layout_height="match_parent"
+                android:background="#A4B1F8"
+
+                android:hint="">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/EditTextName"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:background="#A4B1F8"
+
+                    android:baselineAligned="false"
+                    android:hint="@string/nombre" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="74dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:src="@android:drawable/ic_menu_sort_alphabetically"
+                android:textAlignment="textEnd"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/imputsurname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#A4B1F8"
+android:layout_marginTop="40dp"
+            android:hint="">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EditTextsurname"
+                android:layout_width="243dp"
+                android:layout_height="99dp"
+                android:background="#A4B1F8"
+
+                android:baselineAligned="false"
+                android:hint="@string/apellidos" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="349dp"
+            android:layout_height="105dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <ToggleButton
+                android:id="@+id/CalendarButton"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Calendario"
+                android:textOff="."
+                android:textOn="." />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/imputdate"
+                android:layout_width="244dp"
+                android:layout_height="78dp"
+
+                android:layout_marginTop="50dp"
+                android:hint="">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/EditTexDate"
+                    android:layout_width="286dp"
+                    android:layout_height="52dp"
+                    android:background="#A4B1F8"
+                    android:hint="@string/fecha_de_nacimiento"
+                    android:importantForAutofill="no"
+                    android:inputType="date"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/imputEmail"
+            android:background="#A4B1F8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:hint="">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EditTextEmail"
+                android:layout_width="264dp"
+                android:layout_height="70dp"
+                android:background="#A4B1F8"
+                android:hint="@string/email"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/imputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:background="#A4B1F8"
+            android:hint="">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EditTextPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:background="#A4B1F8"
+                android:hint="Contraseña"
+                android:importantForAutofill="no"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:layout_marginTop="10dp"
+            android:id="@+id/SpinnerFeedbackType"
+            android:layout_width="fill_parent"
+            android:layout_height="74dp"
+            android:entries="@array/feedbacktypelist"
+            android:prompt="@string/feedbacktype1"></Spinner>
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="@string/profesional" />
+
+        <Button
+            android:id="@+id/ButtonRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="#3E4893"
+            android:foregroundTint="#031265"
+            android:gravity="center"
+            android:onClick="sendFeedback"
+            android:paddingTop="100px"
+            android:shadowDx="@dimen/material_emphasis_high_type"
+            android:shadowDy="4"
+            android:text="@string/guardar"
+
+            android:textColor="#ABA4BF"
+            android:textSize="24sp"
+            android:textStyle="bold"></Button>
+
+
+
+        <Button
+            android:id="@+id/ButtonDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#CA2121"
+            android:foregroundTint="#020512"
+            android:gravity="center"
+            android:onClick="sendFeedback"
+            android:paddingTop="100px"
+            android:shadowDx="@dimen/material_emphasis_high_type"
+            android:shadowDy="4"
+            android:text="@string/eliminar"
+
+            android:textColor="#ABA4BF"
+            android:textSize="24sp"
+            android:textStyle="bold"></Button>
+
+    </LinearLayout>
+</ScrollView>

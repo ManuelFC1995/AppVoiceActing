@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A4B1F8"
+    android:scrollbars="vertical"
+    android:textAlignment="center"
+    tools:menu="@menu/menu_list">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="49dp"
+                android:layout_height="match_parent"
+                android:baselineAlignBottom="false"
+                tools:srcCompat="@android:drawable/ic_menu_sort_alphabetically" />
+
+            <EditText
+                android:id="@+id/EditTextName"
+                android:layout_width="330dp"
+                android:layout_height="70dp"
+
+                android:hint="@string/buscar"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/imputdate"
+                android:layout_width="287dp"
+                android:layout_height="78dp"
+
+                android:layout_marginTop="50dp"
+                android:hint="">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/EditTexDate"
+                    android:layout_width="303dp"
+                    android:layout_height="62dp"
+                    android:background="#A4B1F8"
+                    android:hint="@string/fecha_de_nacimiento"
+                    android:importantForAutofill="no"
+                    android:inputType="date"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ToggleButton
+                android:id="@+id/CalendarButton"
+                android:layout_width="49dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="15dp"
+                android:text="Calendario"
+                android:textOff="."
+                android:textOn="." />
+        </LinearLayout>
+
+
+        <Spinner
+            android:id="@+id/SpinnerFeedbackType"
+            android:layout_width="fill_parent"
+            android:layout_height="74dp"
+            android:entries="@array/feedbacktypelist"
+            android:prompt="@string/choosetype1"></Spinner>
+
+        <Button
+            android:id="@+id/ButtonSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:backgroundTint="@color/Beige"
+            android:foregroundTint="#020512"
+            android:gravity="center"
+            android:onClick="sendFeedback"
+            android:paddingTop="100px"
+            android:shadowDx="@dimen/material_emphasis_high_type"
+            android:shadowDy="4"
+            android:text="@string/buscar"
+
+            android:textColor="#ABA4BF"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

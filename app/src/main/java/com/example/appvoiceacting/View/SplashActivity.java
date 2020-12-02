@@ -1,4 +1,4 @@
-package com.example.appvoiceacting;
+package com.example.appvoiceacting.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,7 +17,7 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashActivity.this,Lista.class);
+                Intent intent = new Intent(SplashActivity.this, ListActivity.class);
                 startActivity(intent);
                 finish();
             }

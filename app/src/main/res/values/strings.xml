@@ -1,20 +1,45 @@
 <resources>
-    <string name="app_name">AppVoiceActing</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">VocesEspaña</string>
+    <string name="action_settings">Configuracion</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="first_fragment_label" translatable="false">First Fragment</string>
+    <string name="second_fragment_label" translatable="false">Second Fragment</string>
+    <string name="next" translatable="false">Next</string>
+    <string name="previous" translatable="false">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="title_activity_list">ListActivity</string>
+    <string name="hello_first_fragment" translatable="false">Hello first fragment</string>
+    <string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_list" translatable="false">ListActivity</string>
+    <string name="name_error">Introduzca un nombre valido</string>
+
     <string name="_12_elementos">12 elementos</string>
     <string name="todo">TODO</string>
     <string name="feedbacktype1">Sexo</string>
     <string name="feedbacktype2">Masculino</string>
     <string name="feedbacktype3">Femenino</string>
+    <string name="choosetype1">Profesionales</string>
+    <string name="choosetype2">Fan Dobladores</string>
     <string name="title_activity_lista">Lista</string>
+    <string name="ordenar">Ordenar</string>
+    <string name="configuraci_n">Configuración</string>
+    <string name="ayuda">Ayuda</string>
+    <string name="search">Buscar</string>
+    <string name="guardar">Guardar</string>
+    <string name="formulario_de_registro">Formulario de Registro</string>
+    <string name="nombre">Nombre</string>
+    <string name="email">email</string>
+    <string name="profesional">Profesional</string>
+    <string name="password">Contraseña</string>
+    <string name="title_activity_form_" translatable="false">Form_Activity</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="RegistroEliminado">Registro eliminado</string>
+    <string name="SeguroEliminar">Esta seguro de eliminar este registro?</string>
+    <string name="fecha_de_nacimiento">Fecha de Nacimiento</string>
+    <string name="buscar">Buscar</string>
+    <string name="title_activity_info" translatable="false">InfoActivity</string>
+    <string name="title_activity_search" translatable="false">SearchActivity</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="name_error1" >El apellido debe empezar por letra mayuscula</string>
+    <string name="name_error2" >introduzca un email valido</string>
 
 </resources>

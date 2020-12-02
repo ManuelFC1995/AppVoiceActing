@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/app_bar_search"
+        android:checkable="false"
+        android:checked="false"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="@string/search"
+        android:visible="true"
+
+        app:showAsAction="ifRoom" />
+    <item
+        android:checkable="false"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_rotate"
+        android:title="@string/ordenar"
+        android:visible="true" />
+    <item
+        android:checkable="false"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="@string/configuraci_n"
+        android:visible="true"
+        app:showAsAction="never" />
+    <item android:title="@string/ayuda" />
+    <item     android:id="@+id/SobreNosotros"
+        android:title="SobreAPPVoiceActing" />
+</menu>
