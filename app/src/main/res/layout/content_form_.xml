@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/ScrollView01"
+    android:id="@+id/reciclerView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#A4B1F8"
@@ -32,12 +32,17 @@
             android:textColor="#4451A8"
             android:textSize="10pt"></TextView>
 
-        <ImageView
-            android:id="@+id/imageView"
+        <ImageButton
+            android:id="@+id/imageButton"
             android:layout_width="match_parent"
-            android:layout_height="143dp"
-            android:contentDescription="@string/todo"
+            android:layout_height="214dp"
             app:srcCompat="@android:drawable/ic_menu_crop" />
+
+        <Button
+            android:id="@+id/CleanButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Limpiar imagen" />
 
         <LinearLayout
             android:layout_width="match_parent"

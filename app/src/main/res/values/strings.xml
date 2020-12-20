@@ -12,10 +12,12 @@
     <string name="title_activity_list" translatable="false">ListActivity</string>
     <string name="name_error">Introduzca un nombre valido</string>
 
-    <string name="_12_elementos">12 elementos</string>
+    <string name="_12_elementos">10 elementos</string>
     <string name="todo">TODO</string>
     <string name="feedbacktype1">Sexo</string>
     <string name="feedbacktype2">Masculino</string>
+    <string name="write_permission_denied">permiso denegado</string>
+    <string name="write_permission_granted">permiso aceptado</string>
     <string name="feedbacktype3">Femenino</string>
     <string name="choosetype1">Profesionales</string>
     <string name="choosetype2">Fan Dobladores</string>
@@ -41,5 +43,5 @@
     <string name="apellidos">Apellidos</string>
     <string name="name_error1" >El apellido debe empezar por letra mayuscula</string>
     <string name="name_error2" >introduzca un email valido</string>
-
+    <string name="choose_picture" >Foto elegida</string>
 </resources>

@@ -9,20 +9,11 @@
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <EditText
-        android:id="@+id/editTextTextMultiLine"
-        android:layout_width="340dp"
-        android:layout_height="470dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="30dp"
-        android:ems="10"
-        android:fontFamily="sans-serif-smallcaps"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:text="AppVoiceActing es un registro de los actores y actrices de doblaje españoles, Personajes y peliculas en las que ha trabajado e informacion personal, no solo eso, tu mismo puedes unirte hoy a nuestra comunidad , subir tus propias pruebas de voz y fanDubs y quien sabe...Date a conocer!!"
-        android:textSize="26sp"
-        android:textStyle="italic" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="651dp"
+        android:text="AppVoiceActing es un registro de los actores y actrices de doblaje españoles, Personajes y peliculas en las que ha trabajado e informacion personal, no solo eso, tu mismo puedes unirte hoy a nuestra comunidad , subir tus propias pruebas de voz y fanDubs y quien sabe...Date a conocer!!" />
 
     <ImageView
         android:id="@+id/imageView4"
