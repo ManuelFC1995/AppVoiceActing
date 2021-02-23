@@ -1,31 +1,69 @@
 package com.example.appvoiceacting.Presenter;
+
 import android.Manifest;
-import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.util.Log;
-import android.widget.Toast;
 
-import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
-import com.example.appvoiceacting.R;
 import com.example.appvoiceacting.Interfaces.IpresenterForm;
-import com.example.appvoiceacting.View.Form_Activity;
+import com.example.appvoiceacting.Model.Actor;
+import com.example.appvoiceacting.Model.ActorModel;
+import com.example.appvoiceacting.R;
 import com.example.appvoiceacting.View.MyApplication;
-import com.google.android.material.snackbar.Snackbar;
+
+import java.util.ArrayList;
 
 public class PresenterForm implements IpresenterForm.Presenter {
-
+private ActorModel model;
     private IpresenterForm.View view;
 
     public PresenterForm(IpresenterForm.View view) {
         this.view = view;
     }
 
-    @Override
-    public void onClickSDeleteForm() {
+
+    public void onDelete(){
         view.DialogDelete();
+}
+
+    @Override
+    public ArrayList<String> getCategoriesRealm() {
+        return null;
+    }
+
+    @Override
+    public void onClickSDeleteForm(Actor a) {
+
+        model.DeleteActor(a);
+    }
+    public void Finish(){
+        view.finish();
+    }
+
+    @Override
+    public void OnClickSaveButtonActualizar(Actor actor) {
+        model=new ActorModel();
+        model.ActualizarActor(actor);
+        view.onBackPressed();
+    }
+
+
+    @Override
+    public Actor ActorID(String id) {
+        model=new ActorModel();
+ return model.GetActor(id);
+
+    }
+
+
+
+    @Override
+    public void onClickSaveButton(Actor actor) {
+        model=new ActorModel();
+model.Insert(actor);
+view.onBackPressed();
     }
 
     @Override
@@ -49,6 +87,15 @@ public class PresenterForm implements IpresenterForm.Presenter {
 
             case "ContactEmail":
                 error_msg = MyApplication.getContext().getResources().getString(R.string.name_error2);
+
+                break;
+            case "ContactPassword":
+                error_msg = MyApplication.getContext().getResources().getString(R.string.password_error);
+
+                break;
+
+            case "date":
+                error_msg = MyApplication.getContext().getResources().getString(R.string.date_error);
 
                 break;
         }

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context="com.example.appvoiceacting.View.ListActivity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -22,8 +23,8 @@
 
     <include
         layout="@layout/content_lista"
-        android:layout_height="792dp"
-        android:layout_width="792dp" />
+        android:layout_width="792dp"
+        android:layout_height="792dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"

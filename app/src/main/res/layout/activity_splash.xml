@@ -8,12 +8,4 @@
     android:background="@drawable/splash"
     android:theme="@style/Theme.AppVoiceActing.NoActionBar"
 
-    tools:context="com.example.appvoiceacting.View.SplashActivity" >
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="AppVoiceActing"
-        android:textSize="24sp" />
-</androidx.appcompat.widget.LinearLayoutCompat>
+    tools:context="com.example.appvoiceacting.View.SplashActivity" />

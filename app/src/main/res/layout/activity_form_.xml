@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context="com.example.appvoiceacting.View.Form_Activity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -20,8 +21,9 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_form_" />
-
+    <include
+        layout="@layout/content_form_"
+        android:background="@drawable/fondo" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -4,11 +4,15 @@
         <item>@string/feedbacktype1</item>
         <item>@string/feedbacktype2</item>
         <item>@string/feedbacktype3</item>
+        <item>@string/feedbacktype4</item>
+        <item>@string/feedbacktype5</item>
 
     </string-array>
     <string-array name="choosetypelist">
         <item>@string/choosetype1</item>
         <item>@string/choosetype2</item>
+
+
 
 
     </string-array>

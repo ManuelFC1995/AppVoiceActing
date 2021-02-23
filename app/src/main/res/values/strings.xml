@@ -1,5 +1,6 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">VocesEspaña</string>
+    <string name="Buscar" translatable="false">Buscar</string>
     <string name="action_settings">Configuracion</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label" translatable="false">First Fragment</string>
@@ -13,12 +14,12 @@
     <string name="name_error">Introduzca un nombre valido</string>
 
     <string name="_12_elementos">10 elementos</string>
-    <string name="todo">TODO</string>
-    <string name="feedbacktype1">Sexo</string>
-    <string name="feedbacktype2">Masculino</string>
+    <string name="todo" tools:ignore="DuplicateDefinition">TODO</string>
+
+
     <string name="write_permission_denied">permiso denegado</string>
     <string name="write_permission_granted">permiso aceptado</string>
-    <string name="feedbacktype3">Femenino</string>
+
     <string name="choosetype1">Profesionales</string>
     <string name="choosetype2">Fan Dobladores</string>
     <string name="title_activity_lista">Lista</string>
@@ -41,7 +42,31 @@
     <string name="title_activity_info" translatable="false">InfoActivity</string>
     <string name="title_activity_search" translatable="false">SearchActivity</string>
     <string name="apellidos">Apellidos</string>
-    <string name="name_error1" >El apellido debe empezar por letra mayuscula</string>
+    <string name="name_error1" >Introduzca un Apellido valido</string>
     <string name="name_error2" >introduzca un email valido</string>
+    <string name="date_error" translatable="false">introduzca una fecha  válida</string>
+    <string name="password_error" >la contraseña debe tener 8 caracteres mínimo</string>
     <string name="choose_picture" >Foto elegida</string>
+    <string name="a_adir">Añadir</string>
+    <string name="filedsMissing" translatable="false">compruebe que todos los campos son correctos</string>
+    <string name="feedbacktype3">Joven</string>
+
+    <!-- Alert Dialog -->
+    <string name="add" translatable="false">Añadir</string>
+    <string name="cancel" translatable="false">Cancelar</string>
+    <string name="add_new_option" translatable="false">Añadir Categorio</string>
+    <string name="your_option" translatable="false">Escribir categoria</string>
+    <string name="toast_nothing" translatable="false">Nada introducido</string>
+    <string name="delete_actor_dialog_tittle" translatable="false">Eliminar</string>
+    <string name="delete_actor_dialog_message" translatable="false">Esta seguro de eliminar</string>
+
+    <!-- Spinner -->
+    <string name="spinner_info" translatable="false">Selecciona categoria...</string>
+    <string name="spinner_add" translatable="false">añadir categoria...</string>
+    <string name="feedbacktype1">Tipo de voz</string>
+    <string name="feedbacktype2">Infantil</string>
+    <string name="feedbacktype4">Media</string>
+    <string name="feedbacktype5">Adulto</string>
+
+
 </resources>

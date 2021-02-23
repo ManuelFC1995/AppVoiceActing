@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/limpiarimg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:scrollbars="vertical"
+    android:textAlignment="center"
+    tools:menu="@menu/menu_list">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/imputnameSearch"
+                android:layout_width="245dp"
+                android:layout_height="106dp"
+                android:layout_marginTop="40dp"
+                android:hint="">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/EditTextnameSearch"
+                    android:layout_width="285dp"
+                    android:layout_height="83dp"
+
+                    android:background="@drawable/fondo"
+                    android:baselineAligned="false"
+                    android:hint="@string/nombre" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/imageView116"
+                android:layout_width="334dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="203dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/imputdateSearch"
+                android:layout_width="219dp"
+                android:layout_height="78dp"
+
+                android:layout_marginTop="50dp"
+                android:hint="">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/EditTexDateSearch"
+                    android:layout_width="336dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/fondo"
+                    android:hint="@string/fecha_de_nacimiento"
+                    android:importantForAutofill="no"
+                    android:inputType="date"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageButton
+                android:id="@+id/CalendarButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="159dp"
+                android:layout_marginLeft="159dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="159dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:background="#263A97"
+                app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/SpinnerFeedbackType"
+                android:layout_width="199dp"
+                android:layout_height="74dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/fondo"
+                android:entries="@array/feedbacktypelist"
+                android:prompt="@string/feedbacktype1"></Spinner>
+
+            <Button
+                android:id="@+id/buttonnewSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:text="@string/a_adir"
+                app:icon="@android:drawable/presence_audio_away" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/ButtonSearch"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="200dp"
+            android:background="@drawable/fondo"
+            android:backgroundTint="@color/AliceBlue"
+            android:foregroundTint="#1D2B67"
+            android:gravity="center"
+
+            android:onClick="sendFeedback"
+            android:paddingTop="100dp"
+            android:shadowDx="@dimen/material_emphasis_high_type"
+            android:shadowDy="4"
+            android:text="@string/buscar"
+            android:textColor="#FEFEFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:rippleColor="#5E2D2D" />
+
+
+    </LinearLayout>
+</ScrollView>

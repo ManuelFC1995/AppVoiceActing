@@ -5,7 +5,7 @@
     android:id="@+id/reciclerView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A4B1F8"
+    android:background="@drawable/fondo"
     android:scrollbars="vertical"
     android:textAlignment="center"
     tools:menu="@menu/menu_list">
@@ -52,31 +52,34 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/imputname"
-                android:layout_width="245dp"
-                android:layout_height="match_parent"
-                android:background="#A4B1F8"
+                android:layout_width="256dp"
+                android:layout_height="162dp"
 
                 android:hint="">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/EditTextName"
-                    android:layout_width="match_parent"
-                    android:layout_height="72dp"
-                    android:background="#A4B1F8"
+                    style="@style/MyStyle"
+                    android:layout_width="279dp"
 
+                    android:layout_height="97dp"
+                    android:background="@drawable/fondo"
                     android:baselineAligned="false"
-                    android:hint="@string/nombre" />
+                    android:hint="@string/nombre"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <ImageView
                 android:id="@+id/imageView2"
-                android:layout_width="74dp"
-                android:layout_height="80dp"
+                android:layout_width="107dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="120px"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="16dp"
-                android:layout_marginLeft="16dp"
                 android:layout_weight="1"
                 android:src="@android:drawable/ic_menu_sort_alphabetically"
                 android:textAlignment="textEnd"
@@ -85,43 +88,55 @@
 
         </LinearLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/imputsurname"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#A4B1F8"
-android:layout_marginTop="40dp"
-            android:hint="">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/EditTextsurname"
-                android:layout_width="243dp"
-                android:layout_height="99dp"
-                android:background="#A4B1F8"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/imputsurname"
+                android:layout_width="245dp"
+                android:layout_height="157dp"
+                android:layout_marginTop="40dp"
+                android:hint="">
 
-                android:baselineAligned="false"
-                android:hint="@string/apellidos" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/EditTextsurname"
+                    style="@style/MyStyle"
+                    android:layout_width="285dp"
+                    android:layout_height="99dp"
 
-        </com.google.android.material.textfield.TextInputLayout>
+                    android:background="@drawable/fondo"
+                    android:baselineAligned="false"
+                    android:hint="@string/apellidos"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="334dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        </LinearLayout>
 
         <LinearLayout
-            android:layout_width="349dp"
-            android:layout_height="105dp"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp">
-
-            <ToggleButton
-                android:id="@+id/CalendarButton"
-                android:layout_width="49dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text="Calendario"
-                android:textOff="."
-                android:textOn="." />
+            android:layout_width="match_parent"
+            android:layout_height="172dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/imputdate"
-                android:layout_width="244dp"
+                android:layout_width="219dp"
                 android:layout_height="78dp"
 
                 android:layout_marginTop="50dp"
@@ -129,84 +144,156 @@ android:layout_marginTop="40dp"
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/EditTexDate"
-                    android:layout_width="286dp"
-                    android:layout_height="52dp"
-                    android:background="#A4B1F8"
+                    style="@style/MyStyle"
+                    android:layout_width="256dp"
+                    android:layout_height="78dp"
+                    android:background="@drawable/fondo"
                     android:hint="@string/fecha_de_nacimiento"
                     android:importantForAutofill="no"
-                    android:inputType="date"></com.google.android.material.textfield.TextInputEditText>
+                    android:inputType="date"
+                    android:textSize="14sp"
+                    android:textStyle="normal"></com.google.android.material.textfield.TextInputEditText>
             </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageButton
+                android:id="@+id/CalendarButton"
+                android:layout_width="85dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="75dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:background="#263A97"
+                app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
         </LinearLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/imputEmail"
-            android:background="#A4B1F8"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="30dp"
-            android:hint="">
+            android:layout_height="145dp"
+            android:orientation="horizontal">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/EditTextEmail"
-                android:layout_width="264dp"
-                android:layout_height="70dp"
-                android:background="#A4B1F8"
-                android:hint="@string/email"
-                android:importantForAutofill="no"
-                android:inputType="textEmailAddress" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/imputEmail"
+                android:layout_width="274dp"
+                android:layout_height="106dp"
+                android:layout_marginTop="30dp"
+                android:hint="">
 
-        </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/EditTextEmail"
+                    style="@style/MyStyle"
+                    android:layout_width="264dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/fondo"
+                    android:hint="@string/email"
+                    android:importantForAutofill="no"
+                    android:inputType="textEmailAddress"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/imputPassword"
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="49dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/sym_action_email" />
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="30dp"
-            android:background="#A4B1F8"
-            android:hint="">
+            android:layout_height="187dp"
+            android:orientation="horizontal">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/EditTextPassword"
-                android:layout_width="fill_parent"
-                android:layout_height="70dp"
-                android:background="#A4B1F8"
-                android:hint="Contraseña"
-                android:importantForAutofill="no"
-                android:inputType="textPassword" />
-        </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/imputPassword"
+                android:layout_width="271dp"
+                android:layout_height="97dp"
+                android:layout_marginTop="30dp"
+                android:hint="">
 
-        <Spinner
-            android:layout_marginTop="10dp"
-            android:id="@+id/SpinnerFeedbackType"
-            android:layout_width="fill_parent"
-            android:layout_height="74dp"
-            android:entries="@array/feedbacktypelist"
-            android:prompt="@string/feedbacktype1"></Spinner>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/EditTextPassword"
+                    style="@style/MyStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="81dp"
+                    android:background="@drawable/fondo"
+                    android:hint="Contraseña"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="97dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                app:srcCompat="?android:attr/textSelectHandleRight" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/SpinnerFeedbackType"
+                style="@style/MyStyle"
+                android:layout_width="199dp"
+                android:layout_height="74dp"
+                android:layout_marginTop="10dp"
+                android:entries="@array/feedbacktypelist"
+                android:prompt="@string/feedbacktype1"></Spinner>
+
+            <Button
+                android:id="@+id/buttonVoz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:text="@string/a_adir" />
+
+        </LinearLayout>
 
         <Switch
-            android:id="@+id/switch1"
-            android:layout_width="match_parent"
-            android:layout_height="54dp"
+            android:id="@+id/profesionalS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/profesional" />
 
         <Button
             android:id="@+id/ButtonRegistro"
+            style="@style/MyStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
-            android:backgroundTint="#3E4893"
+            android:backgroundTint="#45499C"
             android:foregroundTint="#031265"
             android:gravity="center"
             android:onClick="sendFeedback"
             android:paddingTop="100px"
             android:shadowDx="@dimen/material_emphasis_high_type"
             android:shadowDy="4"
-            android:text="@string/guardar"
 
+            android:text="@string/guardar"
             android:textColor="#ABA4BF"
             android:textSize="24sp"
             android:textStyle="bold"></Button>
-
 
 
         <Button
